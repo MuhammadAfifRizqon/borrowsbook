@@ -1,0 +1,15 @@
+create table members (
+	id_members serial primary key,
+	code varchar(5),
+	name_members varchar(20),
+	isadmin boolean,
+	password_members varchar(255)
+);
+
+create table books (
+	id_books serial primary key,
+	code_book varchar(6),
+	title varchar(40),
+	author  varchar(40),
+	stock decimal
+);
